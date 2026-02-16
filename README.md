@@ -1,4 +1,3 @@
-# HP-PREDICTIONS
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +15,9 @@ body {
 }
 
 header {
-    background: #1e3c72;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -26,8 +25,8 @@ section {
     padding: 30px;
     margin: 20px;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -46,6 +45,25 @@ code {
     border-radius: 4px;
 }
 
+pre {
+    background: #eee;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+.screenshot {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.screenshot img {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -58,7 +76,7 @@ footer {
 <body>
 
 <header>
-    <h1>🏠 House Price Prediction Project</h1>
+    <h1>🏠 AI House Price Predictor</h1>
     <p>Machine Learning Web Application using Custom Linear Regression & Flask</p>
 </header>
 
@@ -72,6 +90,26 @@ footer {
 <li>Custom Linear Regression using SVD</li>
 <li>Deployed on Render</li>
 </ul>
+</section>
+
+<section>
+<h2>📸 Application Screenshots</h2>
+
+<h3>1️⃣ Home Interface</h3>
+<div class="screenshot">
+    <img src="screenshot/home.png" alt="Home Interface">
+</div>
+
+<h3>2️⃣ Input Filled & Loading State</h3>
+<div class="screenshot">
+    <img src="screenshot/input.png" alt="Input Screenshot">
+</div>
+
+<h3>3️⃣ Prediction Output Result</h3>
+<div class="screenshot">
+    <img src="screenshot/prediction.png" alt="Prediction Screenshot">
+</div>
+
 </section>
 
 <section>
@@ -97,23 +135,14 @@ footer {
 <section>
 <h2>⚙ Implementation Steps</h2>
 
-<h3>1️⃣ Environment Setup</h3>
+<h3>Environment Setup</h3>
 <pre>
 python -m venv venv
 venv\Scripts\activate
 pip install flask numpy pandas scikit-learn gunicorn
 </pre>
 
-<h3>2️⃣ Model Training</h3>
-<ul>
-<li>Data preprocessing</li>
-<li>Feature engineering</li>
-<li>Train custom Linear Regression using SVD</li>
-<li>Evaluate using RMSE and R²</li>
-<li>Save model using pickle</li>
-</ul>
-
-<h3>3️⃣ Run Application</h3>
+<h3>Run Application</h3>
 <pre>
 python app.py
 </pre>
@@ -123,17 +152,7 @@ python app.py
 </section>
 
 <section>
-<h2>🧠 Model Development</h2>
-<p><strong>Model Used:</strong> Custom Linear Regression</p>
-<ul>
-<li>Singular Value Decomposition (SVD)</li>
-<li>Pseudo-inverse calculation</li>
-<li>Manual R² & RMSE computation</li>
-</ul>
-</section>
-
-<section>
-<h2>🚀 Deployment Process</h2>
+<h2>🚀 Deployment</h2>
 
 <ul>
 <li>Push project to GitHub</li>
@@ -143,45 +162,6 @@ python app.py
 </ul>
 
 <p><strong>Live URL:</strong> https://house-price-predictor.onrender.com</p>
-</section>
-
-<section>
-<h2>📈 Sample Output</h2>
-
-<p><strong>Input:</strong></p>
-<ul>
-<li>Bedrooms: 4</li>
-<li>Bathrooms: 4</li>
-<li>Sqft Living: 1340</li>
-<li>Year Built: 1995</li>
-</ul>
-
-<p><strong>Output:</strong></p>
-<code>Estimated House Price: $1,275,464.67</code>
-
-</section>
-
-<section>
-<h2>🛠 Challenges & Solutions</h2>
-
-<ul>
-<li><strong>Feature Encoding:</strong> Used manual label encoding</li>
-<li><strong>Model Persistence:</strong> Saved using pickle</li>
-<li><strong>Deployment Errors:</strong> Fixed missing dependencies</li>
-</ul>
-
-</section>
-
-<section>
-<h2>🔮 Future Enhancements</h2>
-
-<ul>
-<li>Random Forest & Gradient Boosting</li>
-<li>Neural Networks</li>
-<li>Data Visualization Dashboard</li>
-<li>Database Integration</li>
-<li>Docker Deployment</li>
-</ul>
 
 </section>
 
@@ -192,7 +172,7 @@ python app.py
 
 <footer>
 <p>👨‍💻 Project By: A. Nikhil Goud</p>
-<p>Last Updated: 10-02-2026</p>
+<p>© 2026 Nikhil | Flask • Machine Learning • Linear Regression</p>
 </footer>
 
 </body>
