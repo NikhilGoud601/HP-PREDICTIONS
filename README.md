@@ -102,7 +102,7 @@ footer {
 
 <h3>2️⃣ Input Filled & Loading State</h3>
 <div class="screenshot">
-    <img src="screenshot/input.png" alt="Input Screenshot">
+    <img src="screenshot/inputs.png" alt="Input Screenshot">
 </div>
 
 <h3>3️⃣ Prediction Output Result</h3>
